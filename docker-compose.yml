@@ -1,0 +1,10 @@
+version: '3'
+services:
+  database:
+    image: 'postgres'
+    environment:
+      - POSTGRES_USER=shopApp
+      - POSTGRES_PASSWORD=shopApp
+      - POSTGRES_DB=shopApp_db
+    ports:
+      - '5438:5432'
